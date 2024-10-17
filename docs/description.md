@@ -16,9 +16,11 @@ The application process will be simplified, with all the necessary documents bei
 
 We are **Team 4** of Software Engineer course from 2024/2025:
 
+- [**Afonso Baixo - XXXXXX**](https://github.com/)
+- [**Daniel Emídio - 108986**](https://github.com/DanielEmdio/)
 - [**Guilherme Vieira - 108671**](https://github.com/GuilhermeVieiraDev/)
 - [**Henrique Coelho - 108342**](https://github.com/Z3uziks/)
-- [**Daniel Emídio - 108986**](https://github.com/DanielEmdio/)
+- [**Paulo Macedo - 102620**](https://github.com/PauloMaced0/)
 
 Teachers:
 - [**Nuno Sá Couto**](https://www.linkedin.com/in/nscouto)
