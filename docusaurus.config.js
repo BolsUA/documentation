@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'BolsUA Documentation',
+  tagline: '',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -63,7 +63,7 @@ const config = {
         title: 'BolsUA',
         logo: {
           alt: 'BolsUA Logo',
-          src: 'img/logo.svg',
+          src: 'img/BolsUA.png',
         },
         items: [
           {
