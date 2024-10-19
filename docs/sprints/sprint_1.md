@@ -10,11 +10,11 @@ sidebar_position: 1
 
 ## Team
 
-Product Owner: Guilherme Vieira
+**Product Owner:** Guilherme Vieira
 
-Scrum Master: Afonso Baixo
+**Scrum Master:** Afonso Baixo
 
-Development Team: Henrique Coelho, Daniel Emídio, Paulo Macedo
+**Development Team:** Henrique Coelho, Daniel Emídio, Paulo Macedo
 
 ## Goals
 
