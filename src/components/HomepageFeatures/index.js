@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Find the perfect Scholarship',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/Scholarships.png').default,
     description: (
       <>
         Find the perfect scholarship for you, with the help of our platform.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Apply with ease',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/Apply.png').default,
     description: (
       <>
         Apply to the scholarship of your choice with ease, filling out the
@@ -24,7 +24,7 @@ const FeatureList = [
   },
   {
     title: 'Be notified',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/Notified.png').default,
     description: (
       <>
         Be notified of the status of your application, receive
@@ -38,7 +38,8 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {/* <Svg className={styles.featureSvg} role="img" /> */}
+        <img src={Svg} alt={title} className={styles.featureSvg} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
