@@ -11,4 +11,3 @@ The Definition of Done (DoD) outlines the criteria that must be met for a produc
 - Successfully passes the implemented tests
 - Code is reviewed and approved by another team member
 - Documentation is updated to reflect the changes
-- Beta Testing is done
