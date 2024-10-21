@@ -8,13 +8,24 @@ The Definition of Ready (DoR) sets the criteria that a task or user story must m
 
 ### User Stories:
 
-Our user stories have the characteristics defined by the INVEST model:
-- Independent
-- Negotiable
-- Valuable
-- Estimable
-- Small
-- Testable
+Our user stories have the characteristics defined by the **INVEST** model:
+
+- #### Independent
+  The story can be developed and delivered without relying on other user stories.
+- #### Negotiable
+   The story is not fixed or rigid. It’s a starting point for discussion between the customer (or Product Owner) and the development team
+- #### Valuable
+   The story must be easy to estimate in terms of effort and time. This helps prioritize it effectively. Stories that are valuable but too time-consuming may need to be reconsidered
+- #### Estimable
+   The story must be easy to estimate in terms of effort and time. This helps prioritize it effectively. Stories that are valuable but too time-consuming may need to be reconsidered.
+- #### Small
+   For two-week sprints, the story should take no more than 3–4 days to complete, including everything required to reach a “done” state
+- #### Testable
+   The story must have clear acceptance criteria, so it can be tested to confirm it meets the requirements
+
+### Acceptance Criteria
+The Acceptance Criteria must present a specific format of: <br />
+- **Given** &lt;Context&gt;, **When** &lt;action&gt;, **Then** &lt;result&gt;
 
 ### Estimated Costs:
 
