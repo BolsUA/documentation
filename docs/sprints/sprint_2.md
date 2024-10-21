@@ -19,14 +19,13 @@ sidebar_position: 1
 ## Sprint Goals
 
 - BOL-9 View Scholarship details
-  - SUB-TASK
 - BOL-4 Filter Scholarships
 - BOL-10 Apply for a Scholarship
-- 
+- BOL-30 Automatically close scholarships 
 
 |   Expected   | Quantity |
 |--------------|----------|
-| Story Points | 0        |
+| Story Points | 12       |
 | Epics        | 0        |
 
 ## Sprint Review
