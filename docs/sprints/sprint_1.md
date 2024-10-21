@@ -35,7 +35,7 @@ sidebar_position: 1
 
 |   Concluded   | Quantity |
 |---------------|----------|
-| Story Points  | 3        |
+| Story Points  | 6        |
 | Epics         | 0        |
 
 ## Sprint Retrospective
