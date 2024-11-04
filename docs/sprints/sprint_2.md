@@ -19,9 +19,23 @@ sidebar_position: 1
 ## Sprint Goals
 
 - BOL-9 View Scholarship details
+  - Design Scholarship Details Page Layout
+  - Test Scholarship Details Page
+  - Implement Scholarship Details Backend Logic 
 - BOL-4 Filter Scholarships
+  - Design Filter Interface
+  - Implement Filter Logic
+  - Develop Backend Filter Functionality
+  - Create automatic tests for filter
 - BOL-10 Apply for a Scholarship
+  - Design Application Form Layout
+  - Implement Mandatory Document Validation
+  - Test proposal submitted fields  
+  - Create Roles in Cognito
 - BOL-30 Automatically close scholarships 
+  - Implement Deadline Detection Mechanism
+  - Implement async communication
+  - Send Applications to Grading Service 
 
 |   Expected   | Quantity |
 |--------------|----------|
@@ -53,4 +67,3 @@ sidebar_position: 1
 
 ### What Could Be Improved
 - **Task Estimation**: We underestimated the complexity of some user stories, which led to a lower number of completed story points than expected.
-- **Time Management**: We struggled to manage our time effectively, which resulted in incomplete goals. We need to allocate our time more efficiently and prioritize tasks accordingly.

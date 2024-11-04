@@ -10,23 +10,22 @@ sidebar_position: 1
 
 ## Team
 
-**Product Owner:** 
+**Product Owner:** Daniel Emídio
 
-**Scrum Master:** 
+**Scrum Master:** Guilherme Vieira
 
-**Development Team:** Paulo Macedo, Henrique Coelho, Daniel Emídio, Afonso Baixo, Guilherme Vieira
+**Development Team:** Paulo Macedo, Henrique Coelho, Afonso Baixo
 
 ## Sprint Goals
 
-- BOL-
-- BOL-
-- BOL-
-- BOL-
+- BOL-30 Automatically close scholarships
+- BOL-6 Review Scholarship Proposal
+- BOL-7 Revise Scholarship Proposal
 
 |   Expected   | Quantity |
 |--------------|----------|
-| Story Points | 0       |
-| Epics        | 0        |
+| Story Points | 11       |
+| Epics        | 1        |
 
 ## Sprint Review
 
