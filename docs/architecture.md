@@ -43,3 +43,7 @@ All backend services are built using **FastAPI**, using **Docker** for container
 **RabbitMQ** acts as the asynchronous communication layer, decoupling the services and ensuring that tasks like notification delivery and application processing happen without blocking other processes. This approach helps manage processes that do not need immediate synchronous responses and ensures scalability and resilience.
 
 ![Architecture Diagram](./../static/img/Architecture.jpg)
+
+## Deployment
+
+![AWS Deployment Diagram](./../static/img/AWS-Architecture.jpg)
