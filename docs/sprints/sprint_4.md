@@ -33,3 +33,4 @@ sidebar_position: 1
 ## Sprint Retrospective
 
 During most of this sprint period, our team was unable to make progress on the project due to another academic commitments from other curricular units. However, towards the end of the sprint, we managed to achieve a significant milestone by successfully deploying our current solution to AWS. While the team focused most of their capacity on other academic obligations, we were able to conclude the sprint with this important deployment accomplishment.
+In order to facilitate our next sprints, we decided to remove the automated tests from our definition of done, as we were losing too much time trying to make them work. We will focus on manual testing by another team member, for now. Another change to the definition of done was the removal of the need for another team member to review the code. We believe that this will help us to be more agile and deliver more value to the project.

@@ -9,6 +9,5 @@ The Definition of Done (DoD) outlines the criteria that must be met for a produc
 ### Our Definition of Done includes the following criteria:
 - Code development
 - Meets the acceptance criteria
-- Successfully passes the implemented tests
-- Code is reviewed and approved by another team member
+- The code is tested manually by another team member
 - Documentation is updated to reflect the changes
