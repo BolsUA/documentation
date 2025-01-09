@@ -4,19 +4,7 @@ sidebar_position: 4
 
 # Database Documentation
 
-This document describes the entities in the Scholarship Management System and their roles within the platform.
-
-## User
-The `user` table stores information about individuals registered in the system. Users have specific roles such as *student*, *proposer*, *secretary*, and *jury*, which define their permissions in the system.
-
-- `email`: Stores the user's email address.
-- `name`: User's full name.
-- `nMec`: A unique identifier, likely related to academic or personal identification.
-- `hashedPassword`: A hashed version of the user's password for security purposes.
-- `role`: Defines the user's role within the platform. Values are restricted to "student", "proposer", "secretary", or "jury".
-- `created_at`: Timestamp indicating when the user was created.
-- `updated_at`: Timestamp indicating the last time the user's information was updated.
-- `id`: A unique identifier for the user.
+This document describes the entities in the Scholarship Management System and their roles within the platform.Information about users is retrieved from Amazon Cognito for each service that requires user details.
 
 ## Scholarship
 The `scholarship` table represents scholarship opportunities available in the system. These scholarships can have various types, slots, and statuses.
@@ -25,7 +13,8 @@ The `scholarship` table represents scholarship opportunities available in the sy
 - `description`: A longer description of the scholarship.
 - `publisher_id`: A reference to the user who published or created the scholarship.
 - `type`: Defines the type of scholarship (e.g., "Investigation").
-- `slots`: Number of available slots for the scholarship.
+- `spots`: Number of available spots for the scholarship.
+- `jury`: The list of jury members responsible for evaluating applications.
 - `status`: The current state of the scholarship, either "open" or "closed".
 - `dead_line`: The deadline by which applications must be submitted.
 - `created_at`: Timestamp of when the scholarship was created.
@@ -38,10 +27,23 @@ The `grading` table is used to store information about the evaluation of scholar
 
 - `application_id`: References the application that is being graded.
 - `scholarship_id`: References the scholarship for which the application was submitted.
-- `grade`: An integer value representing the grade awarded.
+- `student_id`: References the student who submitted the application.
+- `jury_id`: References the jury member who graded the application.
+- `grade`: An float value representing the grade awarded.
 - `reason`: A text field explaining the rationale behind the grade.
-- `timeStamp`: The date and time when the grade was assigned.
+- `user_response`: Represents the user's response to the grade (e.g., "accepted", "declined").
 - `id`: Unique identifier for each grading entry.
+
+## Submission Completed
+The `submission_completed` table stores information about the completion of submitted results of scholarships.
+
+- `scholarship_id`: References the scholarship for which the results were submitted.
+
+## ScholarshipJury
+The `scholarship_jury` table stores the scholarships_id and jury amount.
+
+- `scholarship_id`: References the scholarship.
+- `juryamount`: The amount of jury members assigned to the scholarship.
 
 ## Application
 The `application` table stores the records of users applying for scholarships. Each application is tied to a specific user and scholarship.
@@ -49,9 +51,13 @@ The `application` table stores the records of users applying for scholarships. E
 - `user_id`: References the user who submitted the application.
 - `scholarship_id`: References the scholarship for which the user applied.
 - `name`: Name of the application.
-- `status`: Represents the state of the application (e.g., "graded", "rejected").
+- `status`: Represents the state of the application (e.g., "graded", "declined").
 - `created_at`: Timestamp of when the application was submitted.
 - `id`: Unique identifier for each application.
+- `user_response`: Represents the user's response to the application (e.g., "accepted", "rejected").
+- `grade`: The grade assigned to the application.
+- `reason`: The reason for the grade being rejected.
+- `select`: Boolean value indicating whether the application was selected.
 
 ## Scientific Area
 The `scientific_area` table categorizes scholarships based on academic disciplines.
@@ -64,14 +70,6 @@ The `jury_table` links jurors to specific scholarships. Jurors are responsible f
 
 - `scholarship_id`: References the scholarship the juror is responsible for.
 - `user_id`: References the juror assigned to evaluate the scholarship.
-
-## Winner
-The `winner` table stores the information about the winning applicants of scholarships.
-
-- `grading_id`: References the grading associated with the winning application.
-- `accepted`: Boolean value indicating whether the applicant accepted the scholarship.
-- `timeStamp`: Timestamp when the winner decision was finalized.
-- `id`: Unique identifier for the winner.
 
 ## Documents
 The `documents` table stores files associated with various entities in the system (e.g., applications or scholarships).
@@ -89,12 +87,6 @@ The `edictal` table is related to the publication of formal notices regarding sc
 - `name`: Name of the edictal document.
 - `file_path`: Path where the edictal is stored.
 - `publication_date`: Date when the edictal was published.
-
-## Winners
-The `winners` table is linked to the `scholarship` entity and stores information about the users who have won specific scholarships.
-
-- `scholarship_id`: References the scholarship.
-- `user_id`: References the user who won the scholarship.
 
 # Database Diagram
 

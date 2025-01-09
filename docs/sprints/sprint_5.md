@@ -10,11 +10,11 @@ sidebar_position: 1
 
 ## Team
 
-**Product Owner:** Afonso Baixo
+**Product Owner:** Henrique Coelho
 
-**Scrum Master:** Paulo Macedo
+**Scrum Master:** Daniel Emídio
 
-**Development Team:** Guilherme Vieira, Henrique Coelho, Daniel Emídio
+**Development Team:** Guilherme Vieira, Paulo Macedo, Afonso Baixo
 
 ## Sprint Goals
 
@@ -33,7 +33,7 @@ sidebar_position: 1
 
 |   Concluded   | Quantity |
 |---------------|----------|
-| Story Points  | X        |
+| Story Points  | 15       |
 | Epics         | 0        |
 
 ## Sprint Retrospective
